@@ -1,0 +1,414 @@
+/* global styles!! */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif; ;
+}
+
+
+body{
+    max-width: 2560px;
+}
+
+h2{
+    letter-spacing: 3px;
+    font-size: 3.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+p{
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+
+a{
+    letter-spacing: 3px;
+}
+
+
+
+
+/* header styles!! */
+.page-header{
+    padding-top: 1.5rem;
+}
+
+.header-title{
+display: flex;
+justify-content: center;
+font-size: 2rem;
+letter-spacing: 3px;
+word-spacing: 3px;
+border-bottom: solid black 2px;
+padding-bottom: 20px;
+font-weight: 900;
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 0px;
+}
+
+.header-navigation li{
+    list-style-type: none;
+    display: inline-block;
+    padding:1.5rem 7rem 1.5rem 7rem;
+}
+
+.header-navigation a{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: black;
+    padding: 0 100px 0 100px;
+}
+
+
+
+/*BANNER STYLES*/
+.banner-image{
+    max-width: 100%;
+    height: 600px;
+    background-image: url(./images/view-on-manhattan-at-night-new-york-city_header-141511.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+
+.banner-text-background{
+    background-color: white;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+}
+
+
+.banner-text h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+   ;
+}
+
+.banner-text p{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+ 
+}
+
+
+
+/* PORTFOLIO STYLES*/
+.portfolio-section{
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-top: solid black 2px;
+   border-bottom: solid black 2px;
+   padding: 15px 0;
+}
+
+.portfolio-text{
+    text-align: center;
+    padding: 30px 0 10px 0;
+    border-top: solid white 2px;
+}
+
+.portfolio-container img{
+    display: block;
+    min-width: 450px;
+   max-width: 450px;
+   min-height: 300px; 
+   max-height: 300px; 
+   border-radius: 5px;
+
+}
+.portfolio-container h3{
+    text-align: center;
+    border: solid white 1px;
+    border-radius: 5px;
+    color: white;
+}
+.portfolio-container{
+    padding: 0.1rem 0.2rem;
+}
+
+.portfolio-background{
+    background-color: rgb(19, 18, 18);
+    border-bottom: solid black 2px;
+}
+
+
+.portfolio-text{
+    background-color: white;
+    padding-top: 60px;
+}
+
+
+
+
+/* STAFF */
+.staff{
+    background-image: url(./images/blurred-road.jpg);
+    height: 700px;
+    color: white;
+    display:flex;  
+    justify-content: center; 
+    flex-wrap: wrap;
+    border-top: solid black 3px;
+}
+
+#staff-title{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.staff-container img{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    border-radius: 450%;
+    align-items: center;
+}
+
+.staff-container{
+    padding: 20px 100px 0 100px;
+}
+
+.staff-text{
+    text-align: center;
+}
+
+.staff p{
+font-size: 1.5rem;
+padding: 10px 0px 0 0px
+}
+
+
+.staff h3{
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+}
+
+.staff strong{
+    font-size: 1.7rem;
+}
+
+/* FOOTER */
+footer h2{
+    padding-top:30px;
+    border-top: solid black 2px;
+}
+.contact-footer{
+    text-align:center;
+    padding-top: 20px;
+}
+
+.contact-footer p{
+    padding-bottom: 10px;
+}
+
+.contact-footer h4{
+    float: left;
+}
+
+/* MEDIA STYLES */
+
+/* PC */
+@media only screen and (min-width:1440px) {
+    .header-navigation li{
+        list-style-type: none;
+        display: inline-block;
+        padding:1.5rem 4.5rem 1.5rem 4.5rem;
+    }
+    .header-navigation a{
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        padding: 0 50px 0 50px;
+    }
+
+    .banner-text h2{
+        padding-top: 5px;
+
+    }
+
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+
+    .banner-text-background{
+        background-color: white;
+        position:absolute;
+        left: 50%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .staff-container{
+        padding: 20px 50px 0 50px;
+    }
+
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1439){
+    .staff-container img{
+        display:flex;
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+    }
+}
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .header-navigation li{
+        list-style-type: none;
+        display: inline-block;
+        padding:1rem 2rem 1rem 2rem;
+    }
+
+    .header-navigation a{
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .banner-text-background{
+        background-color: white;
+        position:absolute;
+        left: 50%;
+        top: 46;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .banner-text h2{
+        padding-top: 5px;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    .portfolio-container img{
+        min-width: 500px;
+        max-width:500px;
+        
+     }
+
+     .staff-container img{
+        display:flex;
+        height: 220px;
+        width: 250px;
+        border-radius: 50%;
+    }
+    
+    .staff-container{
+        padding: 10px 10px 0 10px;
+    }
+    
+    .staff-text{
+        text-align: center;
+    }
+    
+    .staff p{
+    font-size: 1rem;
+    padding: 5px 0px 0 0px
+    }
+    
+    .staff h3{
+        font-size: 1.7rem;
+        padding-bottom: 10px;
+    }
+    
+    .staff strong{
+        font-size: 1.5rem;
+    }
+
+}
+/* Phone */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+
+    .header-navigation li{
+        list-style-type: none;
+        display: inline-block;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        
+    }
+
+    .header-navigation a{
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: black;
+        padding: 0 ;
+    }
+
+    .header-title{
+        font-size: 1.3rem;
+    }
+
+
+    .banner-text h2{
+        padding-top: 5px;
+    }
+
+    .banner-image{
+        max-height:500px;
+    }
+
+    h2{
+     font-size: 1.7rem;
+     padding-bottom: 5px;
+    }
+
+    p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .banner-text-background{
+        background-color: white;
+        position:absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .portfolio-container img{
+    
+        min-width: 300px;
+        max-height: 100px;
+     }
+
+
+}
